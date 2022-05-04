@@ -1,0 +1,26 @@
+node { 
+    agent any
+    stages {     
+        stage ("Git Checkout"){ 
+            steps {
+            script {
+                    checkout([
+                        $class: 'GitSCM',
+                        branches: [[name: "ejemplo"]],
+                        doGenerateSubmoduleConfigurations: false,
+                       // extensions: [[
+                       //     $class: 'RelativeTargetDirectory',
+                       //     relativeTargetDir: "C:/ProgramData/Jenkins/.jenkins/workspace/luis"
+                       // ]],
+                        submoduleCfg: [],
+                        userRemoteConfigs: [[
+                            credentialsId: '',
+                            url: 'https://github.com/Luis-atos/ejemplo-shared-library2.git'
+                        ]]
+                    ])
+                
+                }
+            }
+        } 
+    }
+}
