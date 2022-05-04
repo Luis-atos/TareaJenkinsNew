@@ -21,8 +21,8 @@ node {
                 }
         } 
         stage ("Git librerias"){
-         fileLoader.withGit(jenkins_libs_git_url, '', '','', '') {
-				scm = fileLoader.load('scm/svn');
+         fileLoader.withGit(jenkins_libs_git_url, 'rama1', '','', '') {
+		scm = fileLoader.load('libreria');
         }
    
 }
