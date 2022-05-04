@@ -1,6 +1,6 @@
 node { 
    
-    stages {     
+     
         stage ("Git Checkout"){ 
             steps {
             script {
@@ -22,5 +22,5 @@ node {
                 }
             }
         } 
-    }
+   
 }
