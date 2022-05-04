@@ -27,7 +27,7 @@ node {
 	 echo " ****** GIT DENTRO LOADER ****** "
 		scm = fileLoader.load('libreria');
         }
-	
+	scm.metodo1()
    
       }
 }
