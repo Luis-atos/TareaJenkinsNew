@@ -22,7 +22,7 @@ node {
         } 
         stage ("Git librerias"){
          fileLoader.withGit(jenkins_libs_git_url, 'rama1', 'null','') {
-		scm = fileLoader.load('libreria.groovy');
+		scm = fileLoader.load('libreria');
         }
 	
    
