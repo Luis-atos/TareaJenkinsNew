@@ -23,7 +23,8 @@ node {
         } 
         stage ("Git librerias"){
 	echo " ****** GIT LIBRERIAS ****** "
-         fileLoader.withGit(jenkins_libs_git_url, 'rama1', 'null','') {
+	// Pipeline Remote Loader Plugin
+         fileLoader.withGit(jenkins_libs_git_url, 'rama1', 'null','') {  
 	 echo " ****** GIT DENTRO LOADER ****** "
 		scm = fileLoader.load('libreria');
         }
