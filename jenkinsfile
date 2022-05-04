@@ -2,6 +2,7 @@ node {
    
         def jenkins_libs_git_url = 'https://github.com/Luis-atos/libs.git'
         stage ("Git Checkout"){ 
+	echo " ****** GIT CHECKOUT ****** "
             script {
                     checkout([
                         $class: 'GitSCM',
@@ -21,7 +22,9 @@ node {
                 }
         } 
         stage ("Git librerias"){
+	echo " ****** GIT LIBRERIAS ****** "
          fileLoader.withGit(jenkins_libs_git_url, 'rama1', 'null','') {
+	 echo " ****** GIT DENTRO LOADER ****** "
 		scm = fileLoader.load('libreria');
         }
 	
