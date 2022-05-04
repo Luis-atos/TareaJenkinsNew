@@ -1,0 +1,6 @@
+node{
+  
+  stage('Loading Share Libraries SCM') {
+			echo "\n********** DESCARGA DE LIBRERIAS JENKINS **********\n"
+		}
+}
