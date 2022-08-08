@@ -4,7 +4,8 @@ node {
         stage ("Git Checkout"){ 
             steps {
             script {
-                    checkout([
+            echo " **** Prueba **"
+                   /* checkout([
                         $class: 'GitSCM',
                         branches: [[name: "ejemplo"]],
                         doGenerateSubmoduleConfigurations: false,
@@ -18,7 +19,7 @@ node {
                             url: 'https://github.com/Luis-atos/ejemplo-shared-library2.git'
                         ]]
                     ])
-                
+                */
                 }
             }
         }
