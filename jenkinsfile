@@ -21,6 +21,13 @@ node {
                 
                 }
             }
-        } 
+        }
+        stage ("Git Checkout"){ 
+        steps{
+            script{
+                echo "segundo stage"
+            }
+            }
+        }
     }
 }
