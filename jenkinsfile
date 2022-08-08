@@ -8,10 +8,10 @@ node {
                         $class: 'GitSCM',
                         branches: [[name: "ejemplo"]],
                         doGenerateSubmoduleConfigurations: false,
-                       // extensions: [[
-                       //     $class: 'RelativeTargetDirectory',
-                       //     relativeTargetDir: "C:/ProgramData/Jenkins/.jenkins/workspace/luis"
-                       // ]],
+                        extensions: [[
+                            $class: 'RelativeTargetDirectory',
+                            relativeTargetDir: "C:/ProgramData/Jenkins/.jenkins/workspace/luis"
+                        ]],
                         submoduleCfg: [],
                         userRemoteConfigs: [[
                             credentialsId: '',
